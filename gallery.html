@@ -8,11 +8,11 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="img/bandurria.png">
   <style>
-    /* Set Georgia as the primary font */
+    
     body {
       font-family: 'Georgia', serif;
-      background-image: url(img/body\ bg.png); /* Replace with your image URL */
-      color: #6d4c41; /* Dark brown text color */
+      background-image: url(img/body\ bg.png); 
+      color: #6d4c41; 
     }
 
     h3 {
@@ -27,7 +27,6 @@
   
     }
     
-    /* Hero Section Background with Overlay */
     .hero-bg {
       background: url(img/banner\ 2.jfif) no-repeat center center/cover;
       height: 70vh;
@@ -36,8 +35,9 @@
       align-items: center;
       color: white;
       position: relative;
-      background-attachment: fixed; /* Parallax Effect */
+      background-attachment: fixed; 
     }
+    
     .hero-bg::after {
       content: '';
       position: absolute;
@@ -45,21 +45,19 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+      background: rgba(0, 0, 0, 0.5); 
     }
     .hero-bg .container {
       position: relative;
       z-index: 2;
     }
     
-    /* Make Navbar Sticky */
     .nav-wrapper {
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    /* Carousel Image Styling */
     .carousel .carousel-item img {
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -71,7 +69,6 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    /* Footer Styling */
     .footer {
       background-color: white; 
       padding: 15px 0;
@@ -82,13 +79,11 @@
       margin: 0;
     }
 
-    /* Section Styling */
     .section {
       padding: 40px 0;
-      background-color: #fff8f2; /* Light pink background for sections */
+      background-color: #fff8f2; 
     }
 
-    /* Card Section Styling */
     .card {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s ease;
@@ -98,9 +93,8 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    /* Scrollspy */
     section {
-      scroll-margin-top: 100px; /* Adjust for navbar offset */
+      scroll-margin-top: 100px; 
     }
   </style>
 </head>
