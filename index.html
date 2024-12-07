@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandurria Heritage</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/bandurria.png">
+  <style>
+    /* Hero Section Background */
+    body {
+      background-image: url(img/body\ bg.png); /* Replace with your image URL */
+      font-family: georgia, serif;
+    }
+    
+    .hero-bg {
+      background: url(img/banner\ 1.jfif) no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    }
+
+    /* Styling for sections */
+    .section {
+      padding: 40px 0;
+    }
+
+    .flow-text {
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    /* Navbar Customization */
+    .nav-wrapper {
+      background-color: #6d4c41; 
+    }
+
+    .brand-logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+    }
+
+    .cta-button {
+  padding: 15px 30px;
+  background-color: #7e5e3c;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block; 
+  font-size: 16px;
+  cursor: pointer; 
+}
+
+    .footer {
+      background-color: white; 
+      padding: 15px 0;
+      color: #5b4027;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    /* Card and Image Customization */
+    .z-depth-2 {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Call-to-Action Button */
+    .btn-large {
+      font-size: 1.4rem;
+      padding: 10px 30px;
+      border-radius: 25px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover Effects for Images */
+    .responsive-img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Section Title Styling */
+    h3 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #6d4c41;
+    }
+    
+    p {
+      font-family: 'Gill Sans MT';
+  
+    }
+    /* Mobile Adjustments */
+    @media (max-width: 768px) {
+      .hero-bg {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with Navbar -->
+  <header>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper brown lighten-2">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#home" class="brand-logo">Bandurria</a>
+          <!-- Mobile Menu Trigger -->
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Desktop Menu -->
+          <ul class="right hide-on-med-and-down">
+            <!-- Home -->
+            <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+            <!-- Gallery -->
+            <li><a href="gallery.html"><i class="material-icons left">photo_library</i>Gallery</a></li>
+            <!-- Tutorials -->
+            <li><a href="tutorials.html"><i class="material-icons left">library_music</i>Tutorials</a></li>
+            <!-- Events -->
+            <li><a href="events.html"><i class="material-icons left">music_note</i>Events</a></li>
+             <!-- About -->
+             <li><a href="contact.html"><i class="material-icons left">contact_mail</i>Contact</a></li>
+         </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- Sidenav for Mobile -->
+    <ul class="sidenav brown lighten-4" id="mobile-menu"> 
+      <li><a href="index.html"><i class="material-icons left">home</i>HOME</a></li>
+      <li><a href="gallery.html"><i class="material-icons left">photo_library</i>GALLERY</a></li>
+      <li><a href="tutorials.html"><i class="material-icons left">library_music</i>TUTORIALS</a></li>
+      <li><a href="events.html"><i class="material-icons left">music_note</i>EVENTS</a></li>
+      <li><a href="contact.html"><i class="material-icons left">contact_mail</i>CONTACT</a></li>
+  </ul>
+</header>
+
+  <!-- Home Section -->
+  <div id="home" class="hero-bg valign-wrapper">
+    <div class="container center-align">
+    </div>
+  </div>
+
+  <!-- Bandurria Introduction -->
+  <section id="about" class="section">
+    <div class="container">
+      <h3 class="center-align brown-text text-darken-3">What is the Bandurria?</h3>
+      <p class="flow-text center-align">The Bandurria is a traditional Filipino string instrument, widely used in rondalla music. With its unique timbre, it brings a distinct flavor to Filipino cultural music.</p>
+    </div>
+  </section>
+
+  <!-- Bandurria Images and Features -->
+  <section id="gallery" class="section amber lighten-5">
+    <div class="container">
+      <h3 class="center-align brown-text text-darken-3">The Bandurria in Detail</h3>
+      <div class="row">
+        <div class="col s12 m6 l4">
+          <img src="img/Front.webp" alt="Bandurria Closeup" class="responsive-img z-depth-2">
+          <p class="center-align">Front of Bandurria</p>
+        </div>
+        <div class="col s12 m6 l4">
+          <img src="img/strings.webp" alt="Bandurria Instrument" class="responsive-img z-depth-2">
+          <p class="center-align">Bandurria Strings</p>
+        </div>
+        <div class="col s12 m6 l4">
+          <img src="img/back.webp" alt="Rondalla Ensemble" class="responsive-img z-depth-2">
+          <p class="center-align">Back of Bandurria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- History of the Bandurria -->
+  <section id="bandurria-history" class="section">
+    <div class="container">
+      <h3 class="center-align brown-text text-darken-3">A Brief History</h3>
+      <p class="flow-text">The Bandurria is believed to have originated from Spain and was brought to the Philippines during the Spanish colonial period. It is a member of the lute family and has evolved into an essential part of Filipino folk music, especially in rondalla groups.</p>
+    </div>
+  </section>
+
+  <!-- Bandurria Features -->
+  <section id="bandurria-features" class="section amber lighten-5">
+    <div class="container">
+      <h3 class="center-align brown-text text-darken-3">Bandurria Features</h3>
+      <div class="row">
+        <div class="col s12 m6">
+          <h5><i class="material-icons">music_note</i> Unique Sound</h5>
+          <p>The Bandurria produces a crisp, clear tone that is distinct from other string instruments, contributing a unique layer to Filipino music.</p>
+        </div>
+        <div class="col s12 m6">
+          <h5><i class="material-icons">music_note</i> String Configuration</h5>
+          <p>It typically has 14 strings, arranged in 7 courses, with each pair of strings tuned to the same pitch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandurria in Music Section -->
+  <section id="bandurria-music" class="section white">
+    <div class="container">
+      <h3 class="center-align brown-text text-darken-3">The Bandurria in Filipino Music</h3>
+      <p class="flow-text center-align">The Bandurria is often featured in Filipino folk music, particularly in rondalla performances. It plays an essential role in creating the characteristic harmony and rhythm of the ensemble.</p>
+    </div>
+  </section>
+
+<!-- Call to Action Section -->
+<section class="cta-section" style="background-color: amber lighten-5; font-family: 'Georgia', serif">
+      <a href="gallery.html" class="cta-button btn-large waves-effect waves-light brown darken-2">Visit the Gallery</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer center-align">
+    <p>&copy; 2024 Bandurria Heritage. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();  // Initialize Materialize components like modals, sidenavs
+    });
+  </script>
+</body>
+
+</html>

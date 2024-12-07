@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandurria Heritage | Join Rondalla</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="bandurria.png">
+  <style>
+    /* Body Styling */
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f4e1d2; /* Light beige background for the body */
+      background-image: url(img/body\ bg.png); /* Replace with your image URL */
+      color: #6d4c41; /* Dark brown text color */
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-bg {
+      background: url(img/banner\ 1.jfif) no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    /* Styling for sections */
+    .section {
+      padding: 60px 15px;
+    }
+
+    /* Navbar Customization */
+    .nav-wrapper {
+      background-color: #6d4c41; /* Brown */
+    }
+
+    .brand-logo {
+      font-family: 'Georgia', serif;
+      font-size: 2rem;
+    }
+
+    .footer {
+      background-color: #6d4c41; /* Brown */
+      padding: 40px 0;
+      color: white;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .contact-info {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    /* Contact Form Styling */
+    .contact-section {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .contact-form h2 {
+      color: #6d4c41;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .contact-form p {
+      font-size: 1rem;
+      color: #6d4c41;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .contact-form .input-field input,
+    .contact-form .input-field textarea {
+      border-radius: 25px;
+      padding-left: 40px;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      width: 100%;
+      box-sizing: border-box; /* Prevents overflow */
+    }
+
+    .contact-form .input-field i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .contact-form .btn {
+      background-color: #6d4c41;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 10px 10px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form .btn:hover {
+      background-color: #4e3629;
+    }
+
+    /* Fix for content that exceeds on smaller screens */
+    .contact-form .input-field input,
+    .contact-form .input-field textarea {
+      box-sizing: border-box; /* Ensures padding does not cause overflow */
+    }
+
+    /* Mobile and Tablet Adjustments */
+    @media (max-width: 768px) {
+      .contact-form h2 {
+        font-size: 2rem; /* Slightly smaller heading on mobile */
+      }
+
+      .contact-form .input-field input,
+      .contact-form .input-field textarea {
+        font-size: 2rem; /* Adjust input text size */
+      }
+
+      .contact-form .btn {
+        padding: 10px;
+        font-size: 1rem;
+      }
+
+      .contact-form {
+        padding: 20px;
+      }
+
+      .contact-form p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <header>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper brown lighten-2">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#home" class="brand-logo">Bandurria</a>
+          <!-- Mobile Menu Trigger -->
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Desktop Menu -->
+          <ul class="right hide-on-med-and-down">
+            <!-- Home -->
+            <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+            <!-- Gallery -->
+            <li><a href="gallery.html"><i class="material-icons left">photo_library</i>Gallery</a></li>
+            <!-- Tutorials -->
+            <li><a href="tutorials.html"><i class="material-icons left">library_music</i>Tutorials</a></li>
+            <!-- Events -->
+            <li><a href="events.html"><i class="material-icons left">music_note</i>Events</a></li>
+             <!-- About -->
+             <li><a href="contact.html"><i class="material-icons left">contact_mail</i>Contact</a></li>
+         </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- Sidenav for Mobile -->
+    <ul class="sidenav brown lighten-4" id="mobile-menu">
+      <li><a href="index.html"><i class="material-icons left">home</i>HOME</a></li>
+      <li><a href="gallery.html"><i class="material-icons left">photo_library</i>GALLERY</a></li>
+      <li><a href="tutorials.html"><i class="material-icons left">library_music</i>TUTORIALS</a></li>
+      <li><a href="events.html"><i class="material-icons left">music_note</i>EVENTS</a></li>
+      <li><a href="contact.html"><i class="material-icons left">contact_mail</i>CONTACT</a></li>
+  </ul>
+</header>
+
+  <!-- Home Section -->
+  <div id="home" class="hero-bg valign-wrapper">
+    <div class="container center-align"></div>
+  </div>
+
+  <!-- Join Rondalla Form Section -->
+  <section class="container section scrollspy" id="join-rondalla">
+    <div class="row">
+      <div class="col s12 l6 offset-l3 contact-section">
+        <div class="contact-form">
+          <h2>Join Our Rondalla</h2>
+          <p>Are you passionate about playing traditional string instruments? Fill out the form below to join our Rondalla group and be part of our musical journey!</p>
+
+          <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input type="text" id="name" required>
+            <label for="name">Your Name</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">music_note</i>
+            <input type="text" id="instrument" required>
+            <label for="instrument">Instrument You Play</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">star</i>
+            <input type="text" id="experience" required>
+            <label for="experience">Experience Level</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">access_time</i>
+            <input type="text" id="availability" required>
+            <label for="availability">Availability (Days/Times)</label>
+          </div>
+
+          <div class="input-field">
+            <p>Would you be willing to participate in group performances?</p>
+            <p>
+              <label>
+                <input type="checkbox" id="performances" />
+                <span>Yes, I'm open to performing!</span>
+              </label>
+            </p>
+          </div>
+
+          <div class="input-field center">
+            <button class="btn" onclick="submitApplication()">Submit Application</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <!-- Logo -->
+      <img src="img/bandurria.png" alt="BANDURRIA" style="width: 100px; margin-bottom: 20px;">
+    </div>
+    <div class="contact-info">
+      <p>Contact Us: <strong>+63 912 345 6789</strong></p>
+      <p>Email: <a href="mailto:bandurria@heritage.com" style="color: white;">bandurria@heritage.com</a></p>
+      <p>&copy; 2024 Bandurria Heritage. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+
+    function submitApplication() {
+      const name = document.getElementById('name').value;
+      const instrument = document.getElementById('instrument').value;
+      const experience = document.getElementById('experience').value;
+      const availability = document.getElementById('availability').value;
+      const performances = document.getElementById('performances').checked;
+
+      if (name && instrument && experience && availability) {
+        alert('Thank you, ' + name + '! Your application has been submitted.');
+      } else {
+        alert('Please fill out all the fields.');
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandurria Heritage | Events</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/bandurria.png">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Georgia', serif;
+      background-image: url(img/body\ bg.png); /* Replace with your image URL *
+      color: #6d4c41; /* Dark brown text */
+    }
+
+    /* Hero Section */
+    .hero-bg {
+      background: url(img/banner\ 4.jpg) no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      transition: background-position 0.3s ease, background-size 0.3s ease;
+    }
+
+    /* Make sure the Hero Section adapts to smaller screens */
+    .hero-bg h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Adjust button */
+    .hero-bg a {
+      background-color: #6d4c41;
+      padding: 15px 30px;
+      border-radius: 25px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #6d4c41;
+    }
+
+    /* Events Section */
+    .events-section {
+      padding: 40px 0;
+    }
+
+    .event-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .event-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .event-card:hover .event-info {
+      opacity: 1;
+    }
+
+    .event-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .event-date {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .event-description {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: white; 
+      color: #5b4027;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .event-card {
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 1200px) {
+      .hero-bg h1 {
+        font-size: 2.5rem;
+      }
+      .hero-bg a {
+        font-size: 1rem;
+        padding: 12px 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg h1 {
+        font-size: 2rem;
+      }
+      .hero-bg a {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-bg h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+      .hero-bg a {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header with Navbar -->
+<header>
+    <div class="navbar-fixed">
+      <nav class="nav-wrapper brown lighten-2">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#home" class="brand-logo">Bandurria</a>
+          <!-- Mobile Menu Trigger -->
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Desktop Menu -->
+          <ul class="right hide-on-med-and-down">
+            <!-- Home -->
+            <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+            <!-- Gallery -->
+            <li><a href="gallery.html"><i class="material-icons left">photo_library</i>Gallery</a></li>
+            <!-- Tutorials -->
+            <li><a href="tutorials.html"><i class="material-icons left">library_music</i>Tutorials</a></li>
+            <!-- Events -->
+            <li><a href="events.html"><i class="material-icons left">music_note</i>Events</a></li>
+             <!-- About -->
+             <li><a href="contact.html"><i class="material-icons left">contact_mail</i>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- Sidenav for Mobile -->
+    <ul class="sidenav brown lighten-4" id="mobile-menu">
+      <li><a href="index.html"><i class="material-icons left">home</i>HOME</a></li>
+      <li><a href="gallery.html"><i class="material-icons left">photo_library</i>GALLERY</a></li>
+      <li><a href="tutorials.html"><i class="material-icons left">library_music</i>TUTORIALS</a></li>
+      <li><a href="events.html"><i class="material-icons left">music_note</i>EVENTS</a></li>
+      <li><a href="contact.html"><i class="material-icons left">contact_mail</i>CONTACT</a></li>
+    </ul>
+  </header>
+  
+  <div class="hero-bg">
+  </div>
+  
+
+  <!-- Events Section -->
+  <div class="container events-section">
+    <h2 class="center-align">Latest Events</h2>
+    <div class="row">
+      <!-- Event 1 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 1.jpg" alt="Event 1">
+          <div class="event-info">
+            <h3 class="event-title">SJNHS</h3>
+            <p class="event-date">March 3, 2023</p>
+            <p class="event-description">ARTS EXHIBIT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 2.jpg" alt="Event 2">
+          <div class="event-info">
+            <h3 class="event-title">TAKTAK</h3>
+            <p class="event-date">July 26, 2019</p>
+            <p class="event-description">ENVIRONMENTAL AWARENESS</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 3.jpg" alt="Event 3">
+          <div class="event-info">
+            <h3 class="event-title">SJNHS</h3>
+            <p class="event-date">March 29, 2019</p>
+            <p class="event-description">GSP RIZAL MEETING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Event 4 -->
+<div class="col s12 m6 l4">
+    <div class="event-card">
+      <img src="img/event 4.jpg" alt="Event 3">
+      <div class="event-info">
+        <h3 class="event-title">DIVINE MERCY</h3>
+        <p class="event-date">November 8, 2022</p>
+        <p class="event-description">HOLY MASS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="container events-section">
+    <div class="row">
+      <!-- Event 5 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 5.jpg" alt="Event 1">
+          <div class="event-info">
+            <h3 class="event-title">SJNHS</h3>
+            <p class="event-date">September 6, 2019</p>
+            <p class="event-description">GSP CAMP</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 6 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 6.jpg" alt="Event 2">
+          <div class="event-info">
+            <h3 class="event-title">KINGSVILLE</h3>
+            <p class="event-date">October 20, 2019</p>
+            <p class="event-description">CHRISTMAS CAROLING</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event 7 -->
+      <div class="col s12 m6 l4">
+        <div class="event-card">
+          <img src="img/event 7.jpg" alt="Event 3">
+          <div class="event-info">
+            <h3 class="event-title">SJNHS</h3>
+            <p class="event-date">November 22, 2024</p>
+            <p class="event-description">INAUGURATION</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Footer -->
+  <footer class="footer center-align brown lighten-2 white-text">
+    <p>&copy; 2024 Bandurria Heritage. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize sidenav for mobile menu
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>

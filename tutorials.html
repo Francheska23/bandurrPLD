@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandurria Heritage</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="bandurria.png">
+  <style>
+    /* Set Georgia as the primary font */
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f4e1d2; /* Light beige background for the body */
+      background-image: url(img/body\ bg.png); /* Replace with your image URL */
+      color: #6d4c41; /* Dark brown text color */
+    }
+
+    h3 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #6d4c41;
+    }
+    
+    p {
+      font-family: 'Gill Sans MT';
+    }
+
+    /* Hero Section Background with Overlay */
+    .hero-bg {
+      background: url(img/banner\ 3.jpg) no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      background-attachment: fixed; /* Parallax Effect */
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    }
+    .hero-bg .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: white; 
+      padding: 15px 0;
+      color: #5b4027;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 35px 0;
+      background-color: #fff8f2; /* Light pink background for sections */
+    }
+
+    /* Card Section Styling */
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Header with Navbar -->
+ <header>
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper brown lighten-2">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="brand-logo">Bandurria</a>
+        <!-- Mobile Menu Trigger -->
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <!-- Desktop Menu -->
+        <ul class="right hide-on-med-and-down">
+          <!-- Home -->
+          <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+          <!-- Gallery -->
+          <li><a href="gallery.html"><i class="material-icons left">photo_library</i>Gallery</a></li>
+          <!-- Tutorials -->
+          <li><a href="tutorials.html"><i class="material-icons left">library_music</i>Tutorials</a></li>
+          <!-- Events -->
+          <li><a href="events.html"><i class="material-icons left">music_note</i>Events</a></li>
+           <!-- About -->
+           <li><a href="contact.html"><i class="material-icons left">contact_mail</i>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Sidenav for Mobile -->
+  <ul class="sidenav brown lighten-4" id="mobile-menu">
+    <li><a href="index.html"><i class="material-icons left">home</i>HOME</a></li>
+    <li><a href="gallery.html"><i class="material-icons left">photo_library</i>GALLERY</a></li>
+    <li><a href="tutorials.html"><i class="material-icons left">library_music</i>TUTORIALS</a></li>
+    <li><a href="events.html"><i class="material-icons left">music_note</i>EVENTS</a></li>
+    <li><a href="contact.html"><i class="material-icons left">contact_mail</i>CONTACT</a></li>
+  </ul>
+</header>
+
+<!-- Home Section with Parallax -->
+<div class="hero-bg valign-wrapper">
+  <div class="container center-align">
+  </div>
+</div>
+
+<!-- First Tutorials Section -->
+<section id="tutorials" class="section amber lighten-5">
+  <div class="container">
+    <h3 class="center-align brown-text text-darken-3">Learn to Play Basic Chords</h3>
+
+    <div class="row">
+      <!-- Basic Chords Column 1 -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/chords 1.jpg" alt="Basic Chords 1">
+          </div>
+          <div class="card-content">
+            <p>Learning the chords on the bandurria starts with understanding its layout. The bandurria typically has 14 strings, grouped into seven courses of two strings each. The first step in learning bandurria chords is becoming familiar with the basic open chords, such as C, G, F, and D.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/2pNlFdk7r_k?si=7a6ccfd-DIUdvzNl" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Chords Column 2 -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/chords 2.jpg" alt="Basic Chords 2">
+          </div>
+          <div class="card-content">
+            <p> Since the bandurria uses a smaller fretboard and a different string tension compared to other instruments, it’s crucial to place your fingers in the correct position. The right-hand strumming technique also plays a vital role in achieving a clean sound.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/On-XENS1T6w?si=5mP_yb-JLzdzfBxQ" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Basic Chords Column 3 -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/chords 3.jpg" alt="Basic Chords 3" style="width:100%; height:auto;">
+          </div>
+          <div class="card-content">
+            <p>Learn barre chords, seventh chords, and minor variations to add depth to your playing. Experiment with different chord transitions and practice playing along with songs that feature diverse chord changes. The more you practice, the more versatile your playing will become.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/vFUUOgYFSyA?si=YM76RX1PDIB1Ow4a" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+</section>
+ 
+
+ <!-- Main Container -->
+ <div class="container">
+  <div class="row">
+    
+    <!-- First Image and Text -->
+    <div class="col s12 m6 l6"> <!-- Medium size on all screens -->
+      <div class="card">
+        <div class="card-image">
+          <img src="img/common laud notes.jpg" alt="Image 1">
+        </div>
+        <div class="card-content">
+          <p class="center-align">COMMON LAUD/OCTAVINA NOTES</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Image and Text -->
+    <div class="col s12 m6 l6"> <!-- Medium size on all screens -->
+      <div class="card">
+        <div class="card-image">
+          <img src="img/common bandurria notes.jpg" alt="Image 2">
+        </div>
+        <div class="card-content">
+          <p class="center-align">COMMON BANDURIA NOTES</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Second Tutorials Section -->
+<section id="tutorials" class="section amber lighten-5">
+  <div class="container">
+    <h3 class="center-align brown-text text-darken-3">Learn to Play Basic Songs</h3>
+
+    <div class="row">
+      <!-- Basic Techniques Column -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/basic.jfif" alt="Basic Techniques">
+          </div>
+          <div class="card-content">
+            <p>It is a versatile instrument in the Filipino rondalla ensemble, and playing it requires a good understanding of basic techniques such as proper finger placement, strumming, and plucking. The bandurria features 14 strings, typically arranged in seven pairs, and tuned in intervals of fifths. Developing a solid rhythm. </p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/pNAG8vth9Uc?si=k7e-WwxmbsPlhw8v" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traditional Songs Column -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/traditional.jpg" alt="Traditional Songs">
+          </div>
+          <div class="card-content">
+            <p>Traditional bandurria songs are deeply rooted in Filipino culture, often performed in rondalla ensembles during festivities and social gatherings. Bahay Kubo and Leron Leron Sinta are popular examples that highlight the bandurria's ability to create both soft, delicate tones and strong, lively rhythms. </p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/X31ynL3xHhE?si=V_eSBTQlcS-iq-d6" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modern Column -->
+      <div class="col s12 m6 l4">
+        <div class="card" style="margin-bottom: 20px;">
+          <div class="card-image">
+            <img src="img/pasilyo.jpg" alt="Modern Column" style="width:100%; height:auto;">
+          </div>
+          <div class="card-content">
+            <p>Modern bandurria players experiment with a wide array of techniques, including fingerpicking, complex strumming patterns, and even playing solo arrangements. Songs like Pasilyo and Huwag Ka Nang Umiyak have been popularized with bandurria arrangements, showcasing the instrument's adaptability. .</p>
+          </div>
+          <div class="card-action">
+            <a href="https://youtu.be/XXex60-SE-4?si=HneOE5G4hAGUGkb5" target="_blank" class="btn waves-effect brown lighten-2">Start Learning</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer center-align">
+  <p>&copy; 2024 Bandurria Heritage. All Rights Reserved.</p>
+</footer>
+
+<!-- Include Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+
+    var carouselElems = document.querySelectorAll('.carousel');
+    M.Carousel.init(carouselElems, {
+      fullWidth: true,
+      indicators: true
+    });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+  });
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+  $(document).ready(function(){
+    $('.slider').slider();
+    var instance = M.Slider.getInstance(elem);
+    instance.next();
+    instance.prev();
+  });
+  instance.next();
+</script>
+</body>
+</html>

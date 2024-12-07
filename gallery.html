@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandurria Heritage</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/bandurria.png">
+  <style>
+    /* Set Georgia as the primary font */
+    body {
+      font-family: 'Georgia', serif;
+      background-image: url(img/body\ bg.png); /* Replace with your image URL */
+      color: #6d4c41; /* Dark brown text color */
+    }
+
+    h3 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #6d4c41;
+    }
+     
+    p {
+      font-family: 'Gill Sans MT';
+  
+    }
+    
+    /* Hero Section Background with Overlay */
+    .hero-bg {
+      background: url(img/banner\ 2.jfif) no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      background-attachment: fixed; /* Parallax Effect */
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    }
+    .hero-bg .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Make Navbar Sticky */
+    .nav-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Carousel Image Styling */
+    .carousel .carousel-item img {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .carousel .carousel-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: white; 
+      padding: 15px 0;
+      color: #5b4027;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 40px 0;
+      background-color: #fff8f2; /* Light pink background for sections */
+    }
+
+    /* Card Section Styling */
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Scrollspy */
+    section {
+      scroll-margin-top: 100px; /* Adjust for navbar offset */
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Header with Navbar -->
+ <header>
+  <div class="navbar-fixed">
+    <nav class="nav-wrapper brown lighten-2">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#home" class="brand-logo">Bandurria</a>
+        <!-- Mobile Menu Trigger -->
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <!-- Desktop Menu -->
+        <ul class="right hide-on-med-and-down">
+          <!-- Home -->
+          <li><a href="index.html"><i class="material-icons left">home</i>Home</a></li>
+          <!-- Gallery -->
+          <li><a href="gallery.html"><i class="material-icons left">photo_library</i>Gallery</a></li>
+          <!-- Tutorials -->
+          <li><a href="tutorials.html"><i class="material-icons left">library_music</i>Tutorials</a></li>
+          <!-- Events -->
+          <li><a href="events.html"><i class="material-icons left">music_note</i>Events</a></li>
+           <!-- About -->
+           <li><a href="contact.html"><i class="material-icons left">contact_mail</i>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Sidenav for Mobile -->
+  <ul class="sidenav brown lighten-4" id="mobile-menu">
+    <li><a href="index.html"><i class="material-icons left">home</i>HOME</a></li>
+    <li><a href="gallery.html"><i class="material-icons left">photo_library</i>GALLERY</a></li>
+    <li><a href="tutorials.html"><i class="material-icons left">library_music</i>TUTORIALS</a></li>
+    <li><a href="events.html"><i class="material-icons left">music_note</i>EVENTS</a></li>
+    <li><a href="contact.html"><i class="material-icons left">contact_mail</i>CONTACT</a></li>
+  </ul>
+</header>
+
+<!-- Home Section with Parallax -->
+<div class="hero-bg valign-wrapper">
+  <div class="container center-align">
+  </div>
+</div>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section scrollspy">
+  <div class="container">
+    <h3 class="center-align brown-text text-darken-3">WELCOME TO COLLECTION OF PHOTOS</h3>
+    <div class="carousel">
+      <!-- Each image is now linked to the gallery details page -->
+      <a class="carousel-item" href="#one!"><img src="img/gallery 1.webp" alt="Gallery Image 1"></a>
+      <a class="carousel-item" href="#two!"><img src="img/gallery 2.webp" alt="Gallery Image 2"></a>
+      <a class="carousel-item" href="#three!"><img src="img/gallery 3.webp" alt="Gallery Image 3"></a>
+      <a class="carousel-item" href="#four!"><img src="img/gallery 4.webp" alt="Gallery Image 4"></a>
+      <a class="carousel-item" href="#five!"><img src="img/gallery 5.webp" alt="Gallery Image 5"></a>
+    </div>
+  </div>
+</section>
+
+<!-- photo / grid -->
+<section class="container section scrollspy" id="photo's">
+  <div class="row">
+      <div class="col s12 l4">
+          <img src="img/string.jpg" alt="" class="responsive-img materialbox">
+      </div>
+      <div class="col s12 l6 offset-l1">
+          <h2 class="indigp-text text-darken-2">STRINGS</h2>
+          <p>The Bandurria is a traditional stringed instrument with deep roots in the cultural heritage of Latin America, particularly in regions such as Spain, Argentina, and Peru. Its melodious and distinctive sound comes from its rounded body and the use of metal strings, which create bright, resonant tones. The instrument is often associated with folk music and is played with a plectrum, creating an energetic rhythm that accompanies both vocal and instrumental performances. </p>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 l4 push-l7 offset-l1">
+        <img src="img/bridge.jpg" alt="" class="responsive-img materialbox">
+    </div>
+    <div class="col s12 l6 pull-l4 right-align">
+        <h2 class="indigp-text text-darken-2">BRIDGE</h2>
+        <p>The bridge is a crucial component of the Bandurria, responsible for transmitting the vibrations from the strings to the soundboard (the body of the instrument). The bridge is positioned on the soundboard and holds the strings in place at the lower end of the instrument. The strings pass over the bridge, which is typically made of wood, and their tension is supported by the bridge as they are anchored at both ends (at the tuning pegs on the headstock and the bridge).</p>
+    </div>
+</div>
+
+  <div class="row">
+      <div class="col s12 l4">
+          <img src="img/pegs.jpg" alt="" class="responsive-img materialbox">
+      </div>
+      <div class="col s12 l6">
+          <h2 class="indigp-text text-darken-2">PEGS</h2>
+          <p>The tuning pegs of the Bandurria are critical to the instrument's ability to hold and adjust string tension. Typically made from wood, plastic, or metal, these pegs are carefully designed to fit into the headstock of the Bandurria, allowing the musician to wind or unwind the strings. As the pegs are turned, they either increase or decrease the tension on each string, altering the pitch of the notes produced. The pegs are designed to be durable and provide a stable tuning that can withstand the string pressure during playing. In traditional Bandurrias, these tuning pegs are often handcrafted, reflecting the craftsmanship and heritage of the instrument.</p>
+      </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col s12 l4 push-l7 offset-l1">
+        <img src="img/handle.jpg" alt="" class="responsive-img materialbox">
+    </div>
+    <div class="col s12 l6 pull-l4 right-align">
+        <h2 class="indigp-text text-darken-2">HANDLE</h2>
+        <p>The neck of the Bandurria is typically long and slender, providing the player with the reach necessary to press the strings down on the fingerboard. The neck is usually carved from wood (often hardwood like mahogany, rosewood, or maple) and is designed to be comfortable for playing, allowing the musician to access all the frets while maintaining a secure grip on the instrument.</p>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer center-align">
+  <p>&copy; 2024 Bandurria Heritage. All Rights Reserved.</p>
+</footer>
+
+<!-- Include Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+
+    var carouselElems = document.querySelectorAll('.carousel');
+    M.Carousel.init(carouselElems, {
+      indicators: true,
+    });
+
+    // Initialize Scrollspy
+    var scrollspyElems = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(scrollspyElems);
+
+    // Initialize Tooltips
+    var tooltipElems = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(tooltipElems);
+  });
+</script>
+
+</body>
+</html>
